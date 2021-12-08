@@ -74,7 +74,7 @@ python.py_samples(skip_readmes=True)
 # Customize samples/CONTRIBUTING.rst to replace master with main
 
 s.replace(
-    "samples/CONTRIBUTING.rst",
+    "samples/CONTRIBUTING.md",
     "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/CONTRIBUTING.md",
     "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/CONTRIBUTING.md",
 )
@@ -82,7 +82,7 @@ s.replace(
 # Customize samples/AUTHORING_GUIDE.rst to replace master with main
 
 s.replace(
-    "samples/AUTHORING_GUIDE.rst",
+    "samples/AUTHORING_GUIDE.md",
     "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/AUTHORING_GUIDE.md",
     "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/AUTHORING_GUIDE.md",
 )
