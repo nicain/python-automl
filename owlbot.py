@@ -71,4 +71,20 @@ s.move(templated_files)
 
 python.py_samples(skip_readmes=True)
 
+# Customize samples/CONTRIBUTING.rst to replace master with main
+
+s.replace(
+    "samples/CONTRIBUTING.rst",
+    "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/CONTRIBUTING.md",
+    "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/CONTRIBUTING.md",
+)
+
+# Customize samples/AUTHORING_GUIDE.rst to replace master with main
+
+s.replace(
+    "samples/AUTHORING_GUIDE.rst",
+    "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/AUTHORING_GUIDE.md",
+    "https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/AUTHORING_GUIDE.md",
+)
+
 s.shell.run(["nox", "-s", "blacken"], hide_output=False)
